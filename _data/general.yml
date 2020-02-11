@@ -1,9 +1,5 @@
-home:
-  header:
-    headline: Your beautiful headline
-    call_to_action:
-      title: Check out our blog
-      link: /blog
-
-footer:
-  love: 'Made with <span class="accent">❤</span>'
+title: Jekyll SIte
+description: tying my skills out
+googleanalytics: '121212'
+logo: assets/images/large-logo.png
+headermessage: 'Where are my skills at? '
