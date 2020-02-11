@@ -35,8 +35,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.10.0)
       jekyll (~> 3.3)
-    jekyll-multiple-languages-plugin (1.5.1)
-      jekyll (>= 2.0, < 4.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
@@ -99,11 +97,10 @@ DEPENDENCIES
   amp-jekyll
   jekyll (= 3.6.3)
   jekyll-feed (~> 0.6)
-  jekyll-multiple-languages-plugin
   jekyll-seo-tag
   jekyll-sitemap
   octopress-minify-html
   tzinfo-data
 
 BUNDLED WITH
-   1.16.4
+   1.17.2
