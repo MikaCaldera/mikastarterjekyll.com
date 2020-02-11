@@ -1,0 +1,9 @@
+.wysiwyg {
+  .content {
+    @extend .justify-content-center, .h-100, .p-5;
+
+    h3 { 
+      @extend .my-2;
+    }
+  }
+}

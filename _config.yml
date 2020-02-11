@@ -1,0 +1,66 @@
+### Welcome to Jekyll Webpack Boilerplate
+#
+# This config file contains the config of your webpages
+# You may also want to update /config/webpack.pwa.js in case you want to generate a Progressive Web App
+
+title: Starter Kit From Sandoche
+email: mika@rebelinteractivegroup.com
+description: A super website made with love and fustration
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+theme_color: '#c0ffee'
+twitter_username: MikaCaldera
+github_username:  MikaCaldera
+author: Mika Caldera
+logo: assets/images/large-logo.png
+twitter:
+  username: MikaCaldera
+social:
+  name: Mika Caldera
+  links:
+    - https://www.linkedin.com/in/mikacaldera
+    - https://github.com/mikacaldera
+
+ampdir: amp
+netlify_cms: true
+
+### Google webmaster tools, Google Analytics, Doorbell and Cookie consent uncomment and put the API key
+#webmaster_verifications:
+#  google: verification_code
+#google_analytics: id
+#doorbell:
+#  id: doorbell_id
+#  appKey: doorbell_appKey
+
+#cookie_consent: true
+
+### Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - octopress-minify-html
+  - amp-jekyll
+
+include:
+  - _pages
+
+### Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _src
+  - _images
+  - LICENSE
+  - package.json
+  - README.md
+  - webpack.config.js
+  - yarn-error.log
+  - yarn.lock
+  - config
+  - optimization-fix
+  - optimization-fix-this-file-is-ignored.js
+  - icon.png

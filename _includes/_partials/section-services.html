@@ -1,0 +1,20 @@
+
+<section class="my-5 container">
+  <h3 class="text-center">{{ item.header }}</h3> 
+  <p> {{ item.content }} </p>
+
+  <div class="card-columns">
+    {% for service in item.service %}
+      <div class="card">
+        <img src="{{ service.image }}" class="card-img-top" alt="{{ service.alt }}">
+        Testing Cards
+        <div class="">
+          <div class="card-footer bg-secondary text-white">
+            <a class="text-white" href="{{ service.link }}" class="card-link">{{ service.text }}</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</section>

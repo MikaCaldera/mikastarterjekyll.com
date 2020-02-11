@@ -1,0 +1,20 @@
+.header { 
+  @extend .px-5, .pt-4, .pt-md-5, .text-white, .bg-dark, .mb-0;
+
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+  .intro-copy {
+    @extend .bg-primary;
+
+    .headline {
+      @extend .mt-2;
+    }
+    .subheader {
+      @extend .my-3, .lead;
+    }
+    .lead {
+      @extend .mb-0;
+    }
+  }
+}

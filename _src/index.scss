@@ -1,0 +1,6 @@
+// Import variable overrides
+@import '../_scss/variables';
+@import '../_scss/default';
+
+// Import dependencies from node_modules
+@import "~bootstrap/scss/bootstrap";

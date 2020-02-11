@@ -1,0 +1,25 @@
+// Variables
+$theme-colors: (
+  primary: #508329,
+  second: #007dbb,
+  tertiary: #323e48,
+  grey: #e1e1e1,
+);
+
+$font-family-base: open-sans;
+$font-family-second: proxima-nova;
+
+// Fonts
+$font-size-sm: 1rem;
+
+// Cards
+$card-border-radius: 0;
+
+// Buttons
+$btn-font-family: $font-family-second;
+$btn-font-weight: 600;
+$btn-font-size: 0.4rem;
+$btn-border-radius: 0.2rem;
+
+// headers
+$h3-font-size: 1.4rem;

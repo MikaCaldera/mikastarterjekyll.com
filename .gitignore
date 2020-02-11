@@ -1,0 +1,21 @@
+_site
+.sass-cache
+.jekyll-metadata
+node_modules
+assets
+optimization-fix-this-file-is-ignored.js
+yarn-error.log
+.yarnclean
+
+# editors
+.idea
+
+# macOS
+.DS_Store
+/.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+Thumbs.db
+**/.DS_Store
