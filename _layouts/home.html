@@ -9,3 +9,8 @@ layout: default
 </div>
 
 
+<div class="sections container-fluid">
+  {% for item in page.section %}
+    {% include partials/section-{{ item.type }}.html %}
+  {% endfor %}
+</div>

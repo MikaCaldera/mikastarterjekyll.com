@@ -10,6 +10,5 @@ section:
     headline: 'Testing Headline '
     heroimage: assets/images/800x600-eBlast-Background.jpg
     subheader: Subheader
-    type: header
+    type: hero
 ---
-

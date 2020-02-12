@@ -87,8 +87,8 @@ collections:
         name: "section"
         widget: "list"
         types:
-          - label: 'Header'
-            name: 'header'
+          - label: 'Hero'
+            name: 'hero'
             widget: 'object'
             fields:
               - {label: 'Headline', name: 'headline', widget: 'string' }
