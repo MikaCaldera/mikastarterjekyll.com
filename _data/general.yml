@@ -4,3 +4,7 @@ googleanalytics: '123456'
 logo: assets/images/large-logo.png
 headermessage: 'Hello Message! '
 footer: 'Mango! '
+number:
+  link: '#'
+  text: Hello
+  title: Title
