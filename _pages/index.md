@@ -2,7 +2,7 @@
 layout: home
 title: Index
 permalink: /
-description: 'Testing home page layout. '
+description: 'Testing home page layout.'
 section:
   - cta:
       link: 'https://www.instagram.com/mikacaldera/'

@@ -46,6 +46,12 @@ collections:
             fields:
               - {label: 'Title', name: 'title', widget: 'string', required: true}
               - {label: 'Link', name: 'link', widget: 'string'}
+          - label: 'Footer'
+            name: footer
+            widget: 'object'
+            fields:
+
+              - { label: 'Love', name: love, widget: string }
       - label: 'Social Media'
         name: 'socialmedia'
         file: '_data/socialmedia.yml'
@@ -153,7 +159,7 @@ collections:
     files:
       - name: 'English'
         label: 'English Text'
-        file: '_data/general.yml'
+        file: '_data/original.yml'
         description: 'Text of the website'
         fields:
           - label: 'Home'
@@ -165,9 +171,5 @@ collections:
               widget: 'object'
               fields:
                 - { label: 'Headline', name: headline, widget: string }
-          - label: 'Footer'
-            name: footer
-            widget: 'object'
-            fields:
-              - { label: 'Love', name: love, widget: string }
+
 
