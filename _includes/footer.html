@@ -3,3 +3,56 @@
      {{ site.data.general.footer.love }}
   </div>
 </footer>
+
+
+<!-- Call to Action  -->
+<section class="footercta bg-primary">
+  <div class="footercta container bg-white border border-primary ">
+
+    {% assign number = site.data.number %}
+    {% if number.title %}
+        <p class="text lead">{{ number.text }}
+          {{ number.title }}
+          <a class="number" href="{{ number.link }}">{{ number.link }}</a>
+        </p>
+    {% endif %}
+
+  </div>
+</section>
+
+<!-- Form Html -->
+<section class="form container">
+  <div class="col-lg-12 form mx-auto">
+
+    {% assign form = site.data.form %}
+    {% if form.html %}
+      <div>
+        {{ form.html }}
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<!-- Footer  -->
+<footer class="container-fluid py-5 bg-tertiary">
+  <section class="container">
+    <div class="row">
+      <div class="col-12 col-md">
+        <!-- <img class="img-responsive d-inline-block align-top" height="50px"
+        src="{{ site.data.general.logo | relative_url }}" alt=""> -->
+        <small class="d-block mb-3 text-muted">© 2020</small>
+      </div>
+      <div class="col-6 col-md">
+    
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+  </section>
+</footer>

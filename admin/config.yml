@@ -18,12 +18,13 @@ collections:
         file: '_data/general.yml'
         description: 'Header configuration'
         fields:
-          - { label: 'Site Name', name: 'title', widget: 'string' }
+          - { label: 'Site Name', name: 'title', widget: 'string', required: false}
           - { label: 'Description', name: 'description', widget: 'text', required: false}
           - { label: 'Google Analytics', name: 'googleanalytics', widget: 'string', required: false}
           - { label: 'Logo', name: 'logo', widget: 'image', required: false}
           - { label: 'Header Message', name: 'headermessage', widget: 'string', required: false}
-      - label: 'Navigation Settings'
+          - { label: 'Footer Message', name: 'footer', widget: 'string', required: false}
+      - label: 'Main Navigation'
         name: 'navigation'
         file: '_data/navigation.yml'
         description: 'Navigation configuration'
@@ -40,18 +41,12 @@ collections:
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string', required: true}
                   - {label: 'Link', name: 'link', widget: 'string'}
-          - label: 'Footer Nav'
+          - label: 'Footer Navigation'
             name: 'footernavigation'
             widget: 'list'
             fields:
               - {label: 'Title', name: 'title', widget: 'string', required: true}
               - {label: 'Link', name: 'link', widget: 'string'}
-          - label: 'Footer'
-            name: footer
-            widget: 'object'
-            fields:
-
-              - { label: 'Love', name: love, widget: string }
       - label: 'Social Media'
         name: 'socialmedia'
         file: '_data/socialmedia.yml'
@@ -151,25 +146,25 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
 #Old Page set up
-  - name: 'text'
-    label: 'Text'
-    delete: false # Prevent users from deleting documents in this collection
-    editor:
-      preview: false
-    files:
-      - name: 'English'
-        label: 'English Text'
-        file: '_data/original.yml'
-        description: 'Text of the website'
-        fields:
-          - label: 'Home'
-            name: home
-            widget: 'object'
-            fields:
-            - label: 'Header'
-              name: header
-              widget: 'object'
-              fields:
-                - { label: 'Headline', name: headline, widget: string }
+  # - name: 'text'
+  #   label: 'Text'
+  #   delete: false # Prevent users from deleting documents in this collection
+  #   editor:
+  #     preview: false
+  #   files:
+  #     - name: 'English'
+  #       label: 'English Text'
+  #       file: '_data/original.yml'
+  #       description: 'Text of the website'
+  #       fields:
+  #         - label: 'Home'
+  #           name: home
+  #           widget: 'object'
+  #           fields:
+  #           - label: 'Header'
+  #             name: header
+  #             widget: 'object'
+  #             fields:
+  #               - { label: 'Headline', name: headline, widget: string }
 
 
