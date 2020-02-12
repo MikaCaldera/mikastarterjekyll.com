@@ -2,7 +2,7 @@
 layout: page
 title: Index
 permalink: /
-description: 'Testing home page layout.'
+description: Testing home page layout.
 section:
   - cta:
       link: 'https://www.instagram.com/mikacaldera/'
@@ -11,6 +11,10 @@ section:
     heroimage: assets/images/800x600-eBlast-Background.jpg
     subheader: Subheader
     type: hero
+  - bgcolor: bg-white
+    content: Content
+    header: Header
+    textcolor: text-secondary
+    type: wysiwyg
 ---
-
 
