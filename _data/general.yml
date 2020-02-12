@@ -1,5 +1,6 @@
-home:
-  header:
-    headline: 'Opps nothing shows up here. '
-footer:
-  love: 'Love. Mango.'
+title: Mika Caldera
+description: Description
+googleanalytics: '123456'
+logo: assets/images/large-logo.png
+headermessage: 'Hello Message! '
+footer: 'Mango! '
