@@ -22,8 +22,15 @@ collections:
           - { label: 'Description', name: 'description', widget: 'text', required: false}
           - { label: 'Google Analytics', name: 'googleanalytics', widget: 'string', required: false}
           - { label: 'Logo', name: 'logo', widget: 'image', required: false}
-          - { label: 'Header Message', name: 'headermessage', widget: 'string', required: false}
+          - { label: 'Header Message', name: 'message', widget: 'string', required: false}
           - { label: 'Footer Message', name: 'footer', widget: 'string', required: false}
+          - label: 'Call Number'
+            name: 'number'
+            widget: 'object'
+            fields:
+            - {label: 'Text', name: 'text', widget: 'string' }
+            - {label: 'Greeting', name: 'greeting', widget: 'string', default: 'Greeting'}
+            - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
       - label: 'Main Navigation'
         name: 'navigation'
         file: '_data/navigation.yml'

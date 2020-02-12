@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="footer__container">
-     {{ site.data.general.footer.love }}
+     {{ site.data.general.footer }}
   </div>
 </footer>
 
@@ -9,10 +9,10 @@
 <section class="footercta bg-primary">
   <div class="footercta container bg-white border border-primary ">
 
-    {% assign number = site.data.number %}
-    {% if number.title %}
+    {% assign number = site.data.general.number %}
+    {% if number %}
         <p class="text lead">{{ number.text }}
-          {{ number.title }}
+          {{ number.greeting }}
           <a class="number" href="{{ number.link }}">{{ number.link }}</a>
         </p>
     {% endif %}
@@ -39,8 +39,8 @@
   <section class="container">
     <div class="row">
       <div class="col-12 col-md">
-        <!-- <img class="img-responsive d-inline-block align-top" height="50px"
-        src="{{ site.data.general.logo | relative_url }}" alt=""> -->
+        <img class="img-responsive d-inline-block align-top" height="50px"
+        src="{{ site.data.general.logo | relative_url }}" alt="">
         <small class="d-block mb-3 text-muted">© 2020</small>
       </div>
       <div class="col-6 col-md">
