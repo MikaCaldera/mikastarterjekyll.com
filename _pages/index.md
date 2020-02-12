@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: Index
 permalink: /
 description: 'Testing home page layout.'
@@ -12,3 +12,5 @@ section:
     subheader: Subheader
     type: hero
 ---
+
+

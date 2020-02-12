@@ -1,16 +1,10 @@
 ---
 layout: default
 ---
+
 <div class="home">
   <header class="home__headline-container">
     <h1 class="home__headline">{{ site.data.general.home.header.headline }}</h1>
     <a class="button home__cta" href="{{ site.data.general.home.header.call_to_action.link }}">{{ site.data.general.home.header.call_to_action.title}}</a>
   </header>
-</div>
-
-
-<div class="sections container-fluid">
-  {% for item in page.section %}
-    {% include partials/section-{{ item.type }}.html %}
-  {% endfor %}
 </div>
