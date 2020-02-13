@@ -1,5 +1,8 @@
 backend:
   name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
 
 publish_mode: editorial_workflow
@@ -102,6 +105,13 @@ collections:
                 fields:
                 - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
                 - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
+          - label: "Mystic Hero"
+            name: "mystichero"
+            widget: object
+            fields:
+              - {label: Hero Image, name: heroimage, widget: "image", default: "Image"}
+              - {label: Header, name: header, widget: "string", default: "Header"}
+              - {label: Blurb, name: blurb, widget: "markdown", default: "Blurb"}
           - label: 'WYSIWYG'
             name: 'wysiwyg'
             widget: 'list'
@@ -134,6 +144,34 @@ collections:
                 - {label: Alt Tag, name: 'alt', widget: 'string', default: 'Description'}
                 - {label: 'Text', name: 'test', widget: 'string', default: 'Text'}
                 - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
+          - label: "Call to Action Block"
+            name: "cta"
+            widget: object
+            fields:
+              - label: "Calls to Action"
+                name: "ctas"
+                widget: "list"
+                fields:
+                  - {label: Header, name: header, widget: "string", default: "Header"}
+                  - {label: Blurb, name: blurb, widget: "markdown", default: "Blurb"}
+                  - {label: Image, name: image, widget: "image", default: "Image"}
+                  - {label: Alt Tag, name: alt, widget: "string", default: "Image Description"}
+          - label: "Media & Text"
+            name: "mediatext"
+            widget: object
+            fields:
+              - {label: Header, name: header, widget: "string", default: "Header"}
+              - {label: Content, name: content, widget: "markdown", default: "Content"}
+              - {label: Image, name: image, widget: "image", default: "Image"}
+              - {label: Alt Tag, name: alt, widget: "string", default: "Image Description"}
+              - {label: Link Title, name: link, widget: "string", default: "Link Title"}
+              - {label: URL, name: url, widget: "string", default: "Url Link"}
+              - label: "Align Image"
+                name: "alignimage"
+                widget: "select"
+                options:
+                  - { label: "Image Left", value: "1" }
+                  - { label: "Image Right", value: "3" }
 
  #Blog Posts set up         
   - name: "blog"

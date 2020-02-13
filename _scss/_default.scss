@@ -245,3 +245,106 @@ a {
   }
 
 }
+
+
+// MW Sections 
+
+// Site Header 
+.site-header  {
+  color: theme-color("grey-200");
+    a {
+      color: theme-color("grey-200");
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+}
+
+// Hero Section
+.hero {
+  @extend .text-white;
+
+  .jumbotron {
+    @extend .m-0;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/assets/images/header-image.png);
+    min-height: 250px;
+  }
+  article {
+    @extend .p-5, .pl-5;
+  } 
+}
+
+// What you see if what you get
+.wysiwyg {
+  position: relative;
+  
+  &::before {  
+  background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%22400px%22%20height%3D%2252px%22%20viewBox%3D%220%200%20400%2052%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2059.1%20%2886144%29%20-%20https%3A%2F%2Fsketch.com%20--%3E%0A%20%20%20%20%3Ctitle%3EPath%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Landing-Page%22%20transform%3D%22translate%28-1200.000000%2C%20-571.000000%29%22%20fill%3D%22%2301254B%22%20fill-rule%3D%22nonzero%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Blue-Wave-TOP%22%20transform%3D%22translate%280.000000%2C%20571.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M1350%2C23.2%20C1321.8%2C23.2%201300%2C12%201300%2C12%20C1300%2C12%201278.2%2C0.8%201250%2C0.8%20C1221.8%2C0.8%201200%2C12%201200%2C12%20L1200%2C52%20L1600%2C52%20L1600%2C12%20C1600%2C12%201578.2%2C23.2%201550%2C23.2%20C1521.8%2C23.2%201500%2C12%201500%2C12%20C1500%2C12%201478.2%2C0.8%201450%2C0.8%20C1421.8%2C0.8%201400%2C12%201400%2C12%20C1400%2C12%201378.2%2C23.2%201350%2C23.2%20Z%22%20id%3D%22Path%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+  content: '';
+  background-repeat: repeat-x;
+  position: relative;
+  display: block;
+  top: -22px;
+  height: 30px;
+  }
+}
+
+// Call to Actions
+.cta {
+  @extend .py-1, .bg-primary, .mb-2;
+
+  &::after {  
+    background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%22400px%22%20height%3D%2252px%22%20viewBox%3D%220%200%20400%2052%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2059.1%20%2886144%29%20-%20https%3A%2F%2Fsketch.com%20--%3E%0A%20%20%20%20%3Ctitle%3EPath%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Landing-Page%22%20transform%3D%22translate%280.000000%2C%20-1323.000000%29%22%20fill%3D%22%2301254B%22%20fill-rule%3D%22nonzero%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Blue-Wave-BOTTOM%22%20transform%3D%22translate%281000.000000%2C%201349.000000%29%20scale%281%2C%20-1%29%20translate%28-1000.000000%2C%20-1349.000000%29%20translate%280.000000%2C%201323.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M150%2C23.2%20C121.8%2C23.2%20100%2C12%20100%2C12%20C100%2C12%2078.2%2C0.8%2050%2C0.8%20C21.8%2C0.8%200%2C12%200%2C12%20L0%2C52%20L400%2C52%20L400%2C12%20C400%2C12%20378.2%2C23.2%20350%2C23.2%20C321.8%2C23.2%20300%2C12%20300%2C12%20C300%2C12%20278.2%2C0.8%20250%2C0.8%20C221.8%2C0.8%20200%2C12%20200%2C12%20C200%2C12%20178.2%2C23.2%20150%2C23.2%20Z%22%20id%3D%22Path%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+    content: '';
+    background-repeat: repeat-x;
+    position: relative;
+    display: block;
+    bottom: -40px;
+    height: 60px;
+  }
+
+  .card-cta {
+    @extend .h-100, .border-0, .bg-transparent;
+
+    img{
+      @extend .mx-auto;
+
+      height: 84px;
+      width: 84px;
+    }
+
+    .card-body {
+      @extend .text-center, .bg-primary;
+  
+      .card-title {
+        text-transform: uppercase;
+        color: theme-color("primary");
+        font-family: $font-family-base;
+      }
+      .card-text {
+        color: theme-color("grey-200");
+        font-weight: 400;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+// Media Text 
+.mediatext {
+  @extend .py-5;
+
+  .btn {
+    @extend .my-5;
+  }
+}
+
+// Footer Section
+footer {  
+  @extend .py-3;
+
+  color: theme-color("grey-200");
+}

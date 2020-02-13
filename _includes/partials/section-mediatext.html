@@ -1,0 +1,20 @@
+<section class="{{ item.bgcolor }} mediatext">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-center order-1 order-lg-{{ item.alignimage }}">
+				<img class="img-fluid w-100" src="{{ item.image }}" alt="{{ item.alt }}">
+				<a class="btn btn-lg btn-tertiary" href="{{ item.url }}">
+						{{ item.link }}
+					</a>
+			</div>
+			<div class="col-md-6 order-2 d-flex flex-column justify-content-top">
+				<article class="px-5">
+					<h3 class="mb-4">{{ item.header }}</h3>
+					<div class="content">
+						{{ item.content | markdownify }}
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
