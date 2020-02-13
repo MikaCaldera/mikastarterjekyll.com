@@ -1,0 +1,13 @@
+primarynavigation:
+  - link: '#'
+    submenuitems:
+      - link: '#'
+        title: Navigation  subitem 1
+    title: Navigation Item 1
+  - link: '#'
+    title: Navigation Item 2
+footernavigation:
+  - link: '#'
+    title: 'Footer Item 1 '
+  - link: '#'
+    title: Footer Item 2
