@@ -4,17 +4,14 @@
 # You may also want to update /config/webpack.pwa.js in case you want to generate a Progressive Web App
 
 title: Starter Kit From Sandoche
-email: mika@rebelinteractivegroup.com
+email: your-email@example.com
 description: A super website made with love and fustration
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#c0ffee'
-twitter_username: MikaCaldera
 github_username:  MikaCaldera
-author: Mika Caldera
+author: Mika Caldera, Rebel Interactive Group
 logo: assets/images/large-logo.png
-twitter:
-  username: MikaCaldera
 social:
   name: Mika Caldera
   links:

@@ -1,0 +1,18 @@
+<!-- Footer  -->
+<footer class="container-fluid py-5 bg-tertiary">
+    
+  <ul class="nav justify-content-center">
+      {% if site.data.navigation.footer %}
+        {% for item in site.data.navigation.footer %}
+        {% if item.title %}
+
+          <li class="nav-item{% if item.link == page.link %} active{% endif %}">
+            <a class="nav-link" href="{{ item.link }}">{{ item.title | escape }}</a>
+          </li>
+
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    </ul>
+
+</footer>

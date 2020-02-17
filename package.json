@@ -45,17 +45,17 @@
     "style-loader": "^0.18.2",
     "sw-precache": "^5.2.0",
     "webpack": "^3.4.1",
-    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^2.6.1",
     "webpack-merge": "^4.1.0",
     "webpack-plugin-critical": "^1.0.0",
     "webpack-pwa-manifest": "^3.1.6"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "normalize.css": "^7.0.0",
-    "popper": "^1.0.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.0"
   }
 }

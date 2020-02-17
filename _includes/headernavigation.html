@@ -1,0 +1,34 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        {% if site.data.navigation.primary %}
+          {% for item in site.data.navigation.primary %}
+          {% if item.title %}
+
+            <li class="nav-item{% if item.link == page.link %} active{% endif %}{% if item.submenuitems %} dropdown{% endif %}">
+              <a class="nav-link{% if item.submenuitems %} dropdown-toggle{% endif %}" href="{{ item.link }}" {% if item.submenuitems %} role="button" 
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false"{% endif %}>{{ item.title | escape }}</a>
+              {% if item.submenuitems %}
+                <div class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                  {% for subitem in item.submenuitems %}
+                  <a class="dropdown-item{% if subitem.link == page.link %} active{% endif %}" href="{{ subitem.link | relative_url }}">{{ subitem.title | escape }}</a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      </ul>
+    </div>
+    
+  </div>  <!-- Container -->
+</nav>
