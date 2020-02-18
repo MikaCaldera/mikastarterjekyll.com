@@ -24,7 +24,7 @@ collections:
           - { label: 'Site Name', name: 'title', widget: 'string'}
           - { label: 'Description', name: 'description', widget: 'text'}
           - { label: 'Google Analytics', name: 'googleanalytics', widget: 'string'}
-          - { label: 'Logo', name: 'logo', widget: 'image'}
+          - { label: 'Logo', name: 'logo', widget: 'image', default: '/assets/images/large-logo.png'}
           - { label: 'Header Message', name: 'message', widget: 'string', default: 'Header Message'}
           - { label: 'Footer Message', name: 'footer', widget: 'string', default: 'Footer Message'}
           - label: 'Call Number'
