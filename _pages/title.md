@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Title
-permalink: /slug/
+title: Index
+permalink: /
 description: About this page...
 section:
   - alt: Image Description
