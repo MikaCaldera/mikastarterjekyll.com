@@ -33,7 +33,7 @@ collections:
             fields:
             - {label: 'Text', name: 'text', widget: 'string', default: 'Call Number Text' }
             - {label: 'Greeting', name: 'greeting', widget: 'string', default: 'Greeting'}
-            - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
+            - {label: 'Link', name: 'link', widget: 'string', default: 'URL'}
       - label: 'Main Navigation'
         name: 'navigation'
         file: '_data/navigation.yml'
@@ -70,10 +70,10 @@ collections:
         file: '_data/forms.yml'
         description: 'Site contact form'
         fields:
-          - {label: 'Form HTML', name: 'html', widget: 'text', default: 'Contact Form'}
+          - {label: 'Form HTML', name: 'html', widget: 'text', default: 'Contact form can be pasted here.'}
 
 #Pages set up
-  - label: 'Main Pages'
+  - label: 'Pages'
     name: 'pages'
     folder: '_pages'
     create: true
@@ -100,17 +100,19 @@ collections:
               - {label: 'Headline', name: 'headline', widget: 'string', default: 'Headline'}
               - {label: 'Subheader', name: 'subheader', widget: 'string', default: 'Subheader'} 
               - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://loremflickr.com/640/360'}
+              - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - label: 'Call To Action'
                 name: 'cta'
                 widget: 'object'
                 fields:
                 - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
-                - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
+                - {label: 'Link', name: 'link', widget: 'string', default: 'URL'}
           - label: 'Mystic Hero'
             name: 'mystichero'
             widget: object
             fields:
-              - {label: Hero Image, name: heroimage, widget: 'image', default: 'Image'}
+              - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://loremflickr.com/640/360'}
+              - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - {label: Header, name: header, widget: 'string', default: 'Header'}
               - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
           - label: 'WYSIWYG'
@@ -143,10 +145,10 @@ collections:
                 name: 'service'
                 widget: 'list'
                 fields:
-                - {label: Image, name: 'image', widget: 'image', default: '/assets/images/placeholder.png'}
-                - {label: Alt Tag, name: 'alt', widget: 'string', default: 'Description'}
-                - {label: 'Text', name: 'test', widget: 'string', default: 'Text'}
-                - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
+                - {label: Image, name: 'image', widget: 'image', default: 'https://loremflickr.com/640/360'}
+                - {label: Alt Tag, name: 'alt', widget: 'string', default: 'Image Description'}
+                - {label: 'Text', name: 'text', widget: 'string', default: 'Text'}
+                - {label: 'Link', name: 'link', widget: 'string', default: 'URL'}
           - label: 'Call to Action Block'
             name: 'cta'
             widget: object
@@ -157,7 +159,7 @@ collections:
                 fields:
                   - {label: Header, name: header, widget: 'string', default: 'Header'}
                   - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
-                  - {label: Image, name: image, widget: 'image', default: '/assets/images/placeholder.png'}
+                  - {label: Image, name: image, widget: 'image', default: 'https://loremflickr.com/640/360'}
                   - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
           - label: 'Media & Text'
             name: 'mediatext'
@@ -165,16 +167,17 @@ collections:
             fields:
               - {label: Header, name: header, widget: 'string', default: 'Header'}
               - {label: Content, name: content, widget: 'markdown', default: 'Content'}
-              - {label: Image, name: image, widget: 'image', default: '/assets/images/placeholder.png'}
+              - {label: Image, name: image, widget: 'image', default: 'https://loremflickr.com/640/360'}
               - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - {label: Link Title, name: link, widget: 'string', default: 'Link Title'}
-              - {label: URL, name: url, widget: 'string', default: 'Url Link'}
+              - {label: URL, name: url, widget: 'string', default: 'Url'}
               - label: 'Align Image'
                 name: 'alignimage'
                 widget: 'select'
                 options:
                   - { label: 'Image Left', value: '1' }
                   - { label: 'Image Right', value: '3' }
+                default: '1'
 
  #Blog Posts set up         
   - name: 'blog'
