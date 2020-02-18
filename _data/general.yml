@@ -1,0 +1,10 @@
+title: Site Name
+description: 'Description '
+googleanalytics: '123456'
+logo: assets/images/large-logo.png
+message: 'Header Message '
+footer: Footer Message
+number:
+  greeting: 'Hello '
+  link: '8605555555'
+  text: Call Us 860 555 5555
