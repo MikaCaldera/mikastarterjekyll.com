@@ -83,10 +83,11 @@ collections:
     fields:
       - label: 'Layout'
         name: 'layout'
-        widget: select
+        widget: 'select'
         options: ['default', 'home', 'page']
+        default: 'default'
       - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
-      - {label: 'Path', name: 'permalink', widget: 'string', default: '#'}
+      - {label: 'Path', name: 'permalink', widget: 'string', default: '/slug/'}
       - {label: 'Description', name: 'description', widget: 'text', hint: 'Meta description', default: 'About this page...'}
       - label: 'Page Sections'
         name: 'section'
