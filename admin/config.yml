@@ -85,7 +85,7 @@ collections:
         name: 'layout'
         widget: 'select'
         options: ['default', 'home', 'page']
-        default: ['default']
+        default: 'page'
       - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
       - {label: 'Path', name: 'permalink', widget: 'string', default: '/slug/'}
       - {label: 'Description', name: 'description', widget: 'text', hint: 'Meta description', default: 'About this page...'}
