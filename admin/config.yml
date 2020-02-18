@@ -87,7 +87,7 @@ collections:
         options: ['default', 'home', 'page']
       - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
       - {label: 'Path', name: 'permalink', widget: 'string', default: '#'}
-      - {label: 'Description', name: 'description', widget: 'text', hint: 'Meta description', default: 'Page Description'}
+      - {label: 'Description', name: 'description', widget: 'text', hint: 'Meta description', default: 'About this page...'}
       - label: 'Page Sections'
         name: 'section'
         widget: 'list'
@@ -98,7 +98,7 @@ collections:
             fields:
               - {label: 'Headline', name: 'headline', widget: 'string', default: 'Headline'}
               - {label: 'Subheader', name: 'subheader', widget: 'string', default: 'Subheader'} 
-              - {label: Hero Image, name: heroimage, widget: 'image', default: '/assets/images/placeholder.png'}
+              - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://loremflickr.com/640/360'}
               - label: 'Call To Action'
                 name: 'cta'
                 widget: 'object'
