@@ -121,14 +121,14 @@ collections:
               - {label: 'Content', name: 'content', widget: 'markdown', default: 'Content'}
               - label: 'Background Color'
                 name: 'bgcolor'
-                widget: select
+                widget: 'select'
                 options:
                   - {label: 'Secondary', value: 'bg-secondary'}
                   - {label: 'White', value: 'bg-white' }
                 default: 'bg-secondary'
               - label: 'Text Color'
                 name: 'textcolor'
-                widget: select
+                widget: 'select'
                 options:
                   - {label: 'Secondary', value: 'text-secondary' }
                   - {label: 'White', value: 'text-white'}
