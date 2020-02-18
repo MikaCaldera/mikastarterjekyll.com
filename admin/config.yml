@@ -21,9 +21,9 @@ collections:
         file: '_data/general.yml'
         description: 'Header configuration'
         fields:
-          - { label: 'Site Name', name: 'title', widget: 'string'}
-          - { label: 'Description', name: 'description', widget: 'text'}
-          - { label: 'Google Analytics', name: 'googleanalytics', widget: 'string'}
+          - { label: 'Site Name', name: 'title', widget: 'string', default: 'Site Name'}
+          - { label: 'Description', name: 'description', widget: 'text', default: 'Add site description here.. '}
+          - { label: 'Google Analytics', name: 'googleanalytics', widget: 'string', default: 'Google Analytics Number'}
           - { label: 'Logo', name: 'logo', widget: 'image', default: '/assets/images/large-logo.png'}
           - { label: 'Header Message', name: 'message', widget: 'string', default: 'Header Message'}
           - { label: 'Footer Message', name: 'footer', widget: 'string', default: 'Footer Message'}
