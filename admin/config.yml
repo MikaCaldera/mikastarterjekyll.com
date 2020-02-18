@@ -123,14 +123,16 @@ collections:
                 name: 'bgcolor'
                 widget: select
                 options:
-                  - {label: 'Secondary', value: 'bg-secondary', default: 'Secondary' }
+                  - {label: 'Secondary', value: 'bg-secondary'}
                   - {label: 'White', value: 'bg-white' }
+                default: 'bg-secondary'
               - label: 'Text Color'
                 name: 'textcolor'
                 widget: select
                 options:
                   - {label: 'Secondary', value: 'text-secondary' }
-                  - {label: 'White', value: 'text-white', default: 'White' }
+                  - {label: 'White', value: 'text-white'}
+                default: 'text-white'
           - label: 'Services List'
             name: 'services'
             widget: 'list'
