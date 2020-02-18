@@ -99,7 +99,7 @@ collections:
             fields:
               - {label: 'Headline', name: 'headline', widget: 'string', default: 'Headline'}
               - {label: 'Subheader', name: 'subheader', widget: 'string', default: 'Subheader'} 
-              - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://loremflickr.com/640/360'}
+              - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://placekitten.com/640/360'}
               - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - label: 'Call To Action'
                 name: 'cta'
@@ -111,7 +111,7 @@ collections:
             name: 'mystichero'
             widget: object
             fields:
-              - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://loremflickr.com/640/360'}
+              - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://placekitten.com/640/360'}
               - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - {label: Header, name: header, widget: 'string', default: 'Header'}
               - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
@@ -145,7 +145,7 @@ collections:
                 name: 'service'
                 widget: 'list'
                 fields:
-                - {label: Image, name: 'image', widget: 'image', default: 'https://loremflickr.com/640/360'}
+                - {label: Image, name: 'image', widget: 'image', default: 'https://placekitten.com/640/360'}
                 - {label: Alt Tag, name: 'alt', widget: 'string', default: 'Image Description'}
                 - {label: 'Text', name: 'text', widget: 'string', default: 'Text'}
                 - {label: 'Link', name: 'link', widget: 'string', default: 'URL'}
@@ -159,7 +159,7 @@ collections:
                 fields:
                   - {label: Header, name: header, widget: 'string', default: 'Header'}
                   - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
-                  - {label: Image, name: image, widget: 'image', default: 'https://loremflickr.com/640/360'}
+                  - {label: Image, name: image, widget: 'image', default: 'https://placekitten.com/640/360'}
                   - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
           - label: 'Media & Text'
             name: 'mediatext'
@@ -167,7 +167,7 @@ collections:
             fields:
               - {label: Header, name: header, widget: 'string', default: 'Header'}
               - {label: Content, name: content, widget: 'markdown', default: 'Content'}
-              - {label: Image, name: image, widget: 'image', default: 'https://loremflickr.com/640/360'}
+              - {label: Image, name: image, widget: 'image', default: 'https://placekitten.com/640/360'}
               - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - {label: Link Title, name: link, widget: 'string', default: 'Link Title'}
               - {label: URL, name: url, widget: 'string', default: 'Url'}
