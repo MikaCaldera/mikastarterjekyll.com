@@ -7,8 +7,8 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "_images"
-public_folder: "assets/images"
+media_folder: '_images'
+public_folder: 'assets/images'
 
 collections:
   - label: 'Theme Settings'
@@ -25,13 +25,13 @@ collections:
           - { label: 'Description', name: 'description', widget: 'text'}
           - { label: 'Google Analytics', name: 'googleanalytics', widget: 'string'}
           - { label: 'Logo', name: 'logo', widget: 'image'}
-          - { label: 'Header Message', name: 'message', widget: 'string'}
-          - { label: 'Footer Message', name: 'footer', widget: 'string'}
+          - { label: 'Header Message', name: 'message', widget: 'string', default: 'Header Message'}
+          - { label: 'Footer Message', name: 'footer', widget: 'string', default: 'Footer Message'}
           - label: 'Call Number'
             name: 'number'
             widget: 'object'
             fields:
-            - {label: 'Text', name: 'text', widget: 'string' }
+            - {label: 'Text', name: 'text', widget: 'string', default: 'Call Number Text' }
             - {label: 'Greeting', name: 'greeting', widget: 'string', default: 'Greeting'}
             - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
       - label: 'Main Navigation'
@@ -43,34 +43,34 @@ collections:
             name: 'primary'
             widget: 'list'
             fields:
-              - {label: 'Title', name: 'title', widget: 'string'}
-              - {label: 'Link', name: 'link', widget: 'string'}
+              - {label: 'Title', name: 'title', widget: 'string', default: 'Navigation Item'}
+              - {label: 'Link', name: 'link', widget: 'string', default: '#'}
               - label: 'Sub-Menu Items'
                 name: 'submenuitems'
                 widget: 'list'
                 fields:
-                  - {label: 'Title', name: 'title', widget: 'string'}
-                  - {label: 'Link', name: 'link', widget: 'string'}
+                  - {label: 'Title', name: 'title', widget: 'string', default: 'Submenu Item'}
+                  - {label: 'Link', name: 'link', widget: 'string', default: '#'}
           - label: 'Footer Navigation'
             name: 'footer'
             widget: 'list'
             fields:
-              - {label: 'Title', name: 'title', widget: 'string'}
-              - {label: 'Link', name: 'link', widget: 'string'}
+              - {label: 'Title', name: 'title', widget: 'string', default: 'Footer Menu'}
+              - {label: 'Link', name: 'link', widget: 'string', default: '#'}
       - label: 'Social Media'
         name: 'socialmedia'
         file: '_data/socialmedia.yml'
         description: 'Social media configuration'
         fields:
-          - { label: 'Facebook URL', name: 'facebook', widget: 'string'}
-          - { label: 'Twitter URL', name: 'twitter', widget: 'string' }
-          - { label: 'Instagram URL', name: 'instagram', widget: 'string'}
+          - { label: 'Facebook URL', name: 'facebook', widget: 'string', default: '#'}
+          - { label: 'Twitter URL', name: 'twitter', widget: 'string', default: '#'}
+          - { label: 'Instagram URL', name: 'instagram', widget: 'string', default: '#'}
       - label: 'Contact Forms'
         name: 'contactforms'
         file: '_data/forms.yml'
         description: 'Site contact form'
         fields:
-          - {label: 'Form HTML', name: 'html', widget: 'text'}
+          - {label: 'Form HTML', name: 'html', widget: 'text', default: 'Contact Form'}
 
 #Pages set up
   - label: 'Main Pages'
@@ -85,33 +85,33 @@ collections:
         name: 'layout'
         widget: select
         options: ['default', 'home', 'page']
-      - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Path', name: 'permalink', widget: 'string'}
-      - {label: 'Description', name: 'description', widget: 'text', hint: 'Meta description'}
-      - label: "Page Sections"
-        name: "section"
-        widget: "list"
+      - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
+      - {label: 'Path', name: 'permalink', widget: 'string', default: '#'}
+      - {label: 'Description', name: 'description', widget: 'text', hint: 'Meta description', default: 'Page Description'}
+      - label: 'Page Sections'
+        name: 'section'
+        widget: 'list'
         types:
           - label: 'Hero'
             name: 'hero'
             widget: 'object'
             fields:
-              - {label: 'Headline', name: 'headline', widget: 'string' }
-              - {label: 'Subheader', name: 'subheader', widget: 'string' }
-              - {label: Hero Image, name: heroimage, widget: "image"}
+              - {label: 'Headline', name: 'headline', widget: 'string', default: 'Headline'}
+              - {label: 'Subheader', name: 'subheader', widget: 'string', default: 'Subheader'} 
+              - {label: Hero Image, name: heroimage, widget: 'image', default: '/assets/images/placeholder.png'}
               - label: 'Call To Action'
                 name: 'cta'
                 widget: 'object'
                 fields:
                 - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
                 - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
-          - label: "Mystic Hero"
-            name: "mystichero"
+          - label: 'Mystic Hero'
+            name: 'mystichero'
             widget: object
             fields:
-              - {label: Hero Image, name: heroimage, widget: "image", default: "Image"}
-              - {label: Header, name: header, widget: "string", default: "Header"}
-              - {label: Blurb, name: blurb, widget: "markdown", default: "Blurb"}
+              - {label: Hero Image, name: heroimage, widget: 'image', default: 'Image'}
+              - {label: Header, name: header, widget: 'string', default: 'Header'}
+              - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
           - label: 'WYSIWYG'
             name: 'wysiwyg'
             widget: 'list'
@@ -140,54 +140,54 @@ collections:
                 name: 'service'
                 widget: 'list'
                 fields:
-                - {label: Image, name: 'image', widget: 'image'}
+                - {label: Image, name: 'image', widget: 'image', default: '/assets/images/placeholder.png'}
                 - {label: Alt Tag, name: 'alt', widget: 'string', default: 'Description'}
                 - {label: 'Text', name: 'test', widget: 'string', default: 'Text'}
                 - {label: 'Link', name: 'link', widget: 'string', default: 'Page or Site URL'}
-          - label: "Call to Action Block"
-            name: "cta"
+          - label: 'Call to Action Block'
+            name: 'cta'
             widget: object
             fields:
-              - label: "Calls to Action"
-                name: "ctas"
-                widget: "list"
+              - label: 'Calls to Action'
+                name: 'ctas'
+                widget: 'list'
                 fields:
-                  - {label: Header, name: header, widget: "string", default: "Header"}
-                  - {label: Blurb, name: blurb, widget: "markdown", default: "Blurb"}
-                  - {label: Image, name: image, widget: "image", default: "Image"}
-                  - {label: Alt Tag, name: alt, widget: "string", default: "Image Description"}
-          - label: "Media & Text"
-            name: "mediatext"
+                  - {label: Header, name: header, widget: 'string', default: 'Header'}
+                  - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
+                  - {label: Image, name: image, widget: 'image', default: '/assets/images/placeholder.png'}
+                  - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
+          - label: 'Media & Text'
+            name: 'mediatext'
             widget: object
             fields:
-              - {label: Header, name: header, widget: "string", default: "Header"}
-              - {label: Content, name: content, widget: "markdown", default: "Content"}
-              - {label: Image, name: image, widget: "image", default: "Image"}
-              - {label: Alt Tag, name: alt, widget: "string", default: "Image Description"}
-              - {label: Link Title, name: link, widget: "string", default: "Link Title"}
-              - {label: URL, name: url, widget: "string", default: "Url Link"}
-              - label: "Align Image"
-                name: "alignimage"
-                widget: "select"
+              - {label: Header, name: header, widget: 'string', default: 'Header'}
+              - {label: Content, name: content, widget: 'markdown', default: 'Content'}
+              - {label: Image, name: image, widget: 'image', default: '/assets/images/placeholder.png'}
+              - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
+              - {label: Link Title, name: link, widget: 'string', default: 'Link Title'}
+              - {label: URL, name: url, widget: 'string', default: 'Url Link'}
+              - label: 'Align Image'
+                name: 'alignimage'
+                widget: 'select'
                 options:
-                  - { label: "Image Left", value: "1" }
-                  - { label: "Image Right", value: "3" }
+                  - { label: 'Image Left', value: '1' }
+                  - { label: 'Image Right', value: '3' }
 
  #Blog Posts set up         
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts/"
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
     create: true 
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Categories", name: "categories", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Categories', name: 'categories', widget: 'string'}
+      - {label: 'Author', name: 'author', widget: 'string'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
 
 
