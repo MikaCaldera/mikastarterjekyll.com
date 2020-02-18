@@ -5,6 +5,11 @@
     <span class="navigation__logo"><img src="{{ "/assets/images/icon.png" | relative_url }}" class="navigation__logo-img" alt=""></span>
     <span class="navigation__title">{{ site.title | escape }}</span>
   </a>
+  <div class="d-flex justify-content-center">
+    {{ site.data.general.header }}
+  </div>
+
+
   <div class="navigation__links">
     {% if page_paths %}
       {% for path in page_paths %}
