@@ -11,8 +11,8 @@ media_folder: '_images'
 public_folder: 'assets/images'
 
 collections:
-  - label: 'Theme Settings'
-    name: 'theme'
+  - label: 'Site Settings'
+    name: 'site'
     editor:
       preview: false
     files:
@@ -51,7 +51,7 @@ collections:
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string', default: 'Submenu Item'}
                   - {label: 'Link', name: 'link', widget: 'string', default: '#'}
-          - label: 'Footer Navigation'
+          - label: 'Footer Navigation Items'
             name: 'footer'
             widget: 'list'
             fields:
@@ -73,7 +73,7 @@ collections:
           - {label: 'Form HTML', name: 'html', widget: 'text', default: 'Contact form can be pasted here.'}
 
 #Pages set up
-  - label: 'Pages'
+  - label: 'Create New Page'
     name: 'pages'
     folder: '_pages'
     create: true
@@ -81,7 +81,7 @@ collections:
     editor:
       preview: false
     fields:
-      - label: 'Layout'
+      - label: 'Page Layout Type'
         name: 'layout'
         widget: 'select'
         options: ['default', 'home', 'page']
@@ -93,8 +93,8 @@ collections:
         name: 'section'
         widget: 'list'
         types:
-          - label: 'Hero'
-            name: 'hero'
+          - label: 'Full Width Hero'
+            name: 'fullhero'
             widget: 'object'
             fields:
               - {label: 'Headline', name: 'headline', widget: 'string', default: 'Headline'}
@@ -107,15 +107,15 @@ collections:
                 fields:
                 - {label: 'Title', name: 'title', widget: 'string', default: 'Title'}
                 - {label: 'Link', name: 'link', widget: 'string', default: 'URL'}
-          - label: 'Mystic Hero'
-            name: 'mystichero'
+          - label: 'Half Hero'
+            name: 'halfhero'
             widget: object
             fields:
               - {label: Hero Image, name: heroimage, widget: 'image', default: 'https://placekitten.com/640/360'}
               - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
               - {label: Header, name: header, widget: 'string', default: 'Header'}
               - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
-          - label: 'WYSIWYG'
+          - label: 'Simple Content - wysiwyg'
             name: 'wysiwyg'
             widget: 'list'
             fields:
@@ -161,7 +161,7 @@ collections:
                   - {label: Blurb, name: blurb, widget: 'markdown', default: 'Blurb'}
                   - {label: Image, name: image, widget: 'image', default: 'https://placekitten.com/640/360'}
                   - {label: Alt Tag, name: alt, widget: 'string', default: 'Image Description'}
-          - label: 'Media & Text'
+          - label: 'Media & Text (Left or Right)'
             name: 'mediatext'
             widget: object
             fields:
