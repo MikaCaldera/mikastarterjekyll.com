@@ -1,6 +1,12 @@
+// Fonts 
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
 // Import variable overrides
 @import '../_scss/variables';
-@import '../_scss/default';
 
 // Import dependencies from node_modules
 @import "~bootstrap/scss/bootstrap";
+
+// Site Specific Scss
+@import '../_scss/default';
+@import '../_scss/sections';

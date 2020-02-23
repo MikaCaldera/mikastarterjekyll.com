@@ -1,3 +1,6 @@
+// Import Bootstrap functions
+@import "~bootstrap/scss/functions";
+
 // Variables
 $theme-colors: (
   primary: #508329,
@@ -6,11 +9,20 @@ $theme-colors: (
   grey: #e1e1e1,
 );
 
-$font-family-base: open-sans;
-$font-family-second: proxima-nova;
+$primary-font-family: 'Lacquer', sans-serif;
+$font-family-base: 'Lacquer', sans-serif;
+$font-family-second: Open-san, sans-serif;
 
 // Fonts
 $font-size-sm: 1rem;
+
+// header sizes
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 0.95rem;
+$h5-font-size: 0.8rem;
+$font-weight-base: 100;
 
 // Cards
 $card-border-radius: 0;

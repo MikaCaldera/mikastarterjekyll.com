@@ -1,0 +1,51 @@
+
+.blog {
+  margin-top: 60px;
+
+
+  &__post {
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    &:first-child {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__date {
+    padding-top: 15px;
+    width: 30%;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+
+  &__link {
+    &:hover {
+      color: blue;
+    }
+  }
+
+  &__title {
+    color: blue;
+    padding-top: 0;
+  }
+
+  &__excerpt {
+    color: purple;
+  }
+}
+

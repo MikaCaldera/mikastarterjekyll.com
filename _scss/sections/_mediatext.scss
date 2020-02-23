@@ -1,0 +1,8 @@
+// Media Text 
+.mediatext {
+  @extend .py-5;
+
+  .btn {
+    @extend .my-5;
+  }
+}
