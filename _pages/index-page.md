@@ -11,12 +11,12 @@ section:
     headline: Headline
     heroimage: 'https://placekitten.com/640/360'
     subheader: Subheader
-    type: hero
+    type: fullhero
   - alt: Image Description
     blurb: Blurb
     header: Header
     heroimage: 'https://placekitten.com/640/360'
-    type: mystichero
+    type: halfhero
   - bgcolor: bg-secondary
     content: Content
     header: Header
